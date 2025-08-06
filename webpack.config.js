@@ -47,10 +47,24 @@ module.exports = {
 				test: /\.(ts|tsx)$/,
 				loader: 'ts-loader',
 			},
+			{
+				test: /\.css$/i,
+				use: [
+					{ loader: 'style-loader' },
+					{
+						loader: 'css-loader',
+						options: {
+							modules: {
+								namedExport: false,
+							},
+						},
+					},
+				],
+			},
 		],
 	},
 	resolve: {
-		extensions: ['.tsx', '.ts', '.js'],
+		extensions: ['.tsx', '.ts', '.js', '.css'],
 	},
 	plugins: [
 		new ModuleFederationPlugin({

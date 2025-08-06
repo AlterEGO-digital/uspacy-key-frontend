@@ -1,14 +1,15 @@
 import Box from '@mui/material/Box';
-import { useAppSelector } from '@uspacy/store';
+// import { useAppSelector } from '@uspacy/store';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
+// import { useTranslation } from 'react-i18next';
 import Providers from '../../Providers';
+import Tree from '../shared/FolderTree';
 import { IProps } from './types';
 
 const App: React.FC = () => {
-	const { t } = useTranslation();
-	const profile = useAppSelector((state) => state.profile.data);
+	// const { t } = useTranslation();
+	// const profile = useAppSelector((state) => state.profile.data);
 
 	return (
 		<Box
@@ -16,9 +17,10 @@ const App: React.FC = () => {
 				display: 'flex',
 				justifyContent: 'center',
 				color: (theme) => theme.palette.primary.main,
+				height: '100vh',
 			}}
 		>
-			{t('helloWorld')} | {profile?.firstName} {profile?.lastName}
+			<Tree />
 		</Box>
 	);
 };
