@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcontainer=self.webpackChunkcontainer||[]).push([[31],{4031:e=>{e.exports=JSON.parse('{"title":"Ustawienia","save":"Zapisz"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcontainer=self.webpackChunkcontainer||[]).push([[804],{5804:e=>{e.exports=JSON.parse('{"helloWorld":"Olá Mundo"}')}}]);
